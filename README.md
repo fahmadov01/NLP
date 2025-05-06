@@ -66,12 +66,12 @@ To run this project, you will need to install the following Python libraries:
 3. Run each cell in order:
    - This will preprocess the data,
    - Train the SVM model on the clickbait dataset,
-   - Evaluate the model on both the test set and the YouTube dataset.
+   - Evaluate the model on both the News Headline test set and the YouTube dataset.
 4. Confusion matrices and classification reports will be printed and displayed as plots.
 
 ## Results
 
-### Model Trained on News Headlines
+### Model Trained on News Headlines and Tested with News Headlines
 
 **Confusion Matrix (News):**
 |                  | Predicted: Not Clickbait | Predicted: Clickbait |
@@ -93,7 +93,7 @@ To run this project, you will need to install the following Python libraries:
 
 ---
 
-### Model Tested on YouTube Titles
+### News Headline Trained Model Tested on YouTube Titles
 
 **Confusion Matrix (YouTube):**
 |                  | Predicted: Not Clickbait | Predicted: Clickbait |
