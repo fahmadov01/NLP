@@ -1,15 +1,31 @@
 # NLP Project - Spring 2025
-- Nate Cowan
+**Team Member:** Nate Cowan
 
 ## Overview
 This project implements a clickbait headline detection system using multiple different NLP algorithms. The models are trained on a labeled dataset of news headlines, where each entry is labeled as either **clickbait (1)** or **not clickbait (0)**.
 
 This README provides detailed instructions on how to reproduce the results in a clean environment, including environment setup, data access, preprocessing steps, training procedures, and output expectations.
 
+---
+
 ## Data Sets
 Download wither from this repository, or they can be found here:
-https://www.kaggle.com/datasets/amananandrai/clickbait-dataset
-INSERT YOUTUBE LINK HERE
+- [Kaggle - Clickbait Dataset](https://www.kaggle.com/datasets/amananandrai/clickbait-dataset)
+- [YouTube Dataset - LINK TBD] *(LINK HERE)*
+
+---
+
+## Project Setup
+
+### Environment Setup
+
+Use Python 3.10??? or later. We recommend using a virtual environment:
+
+```
+what goes here???
+```
+
+---
 
 ## Contributions
 - Nate Cowan
@@ -17,13 +33,17 @@ INSERT YOUTUBE LINK HERE
   - Wrote the introduction to the progress report, as well as the data section
   - Helped with the final presentation slides
 
+---
+
 ## Decision Tree
 This module focuses specifically on the decision tree component of the larger NLP project. For this file, you may have to edit the path to the data in the notebook, but if it is structured the same way it is in the GitHub repository, it should function. The notebook should do all preprocessing, so it can be run in its entirety.
 
 ### Required Libraries
-pandas==2.2.2
-scikit-learn==1.3.0
-matplotlib==3.8.4
+- pandas==2.2.2
+- scikit-learn==1.3.0
+- matplotlib==3.8.4
+```pip install pandas==2.2.2 scikit-learn==1.3.0 matplotlib==3.8.4```
+---
 
 ## TF-IDF vs Word2Vec and other methods
 - Data set size
