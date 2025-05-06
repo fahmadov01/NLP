@@ -70,49 +70,11 @@ To run this project, you will need to install the following Python libraries:
 4. Confusion matrices and classification reports will be printed and displayed as plots.
 
 ## Results
+The Support Vector Machine (SVM) model was trained and tested on a dataset of news headlines. It achieved an accuracy of **95%**, with strong precision and recall for both clickbait and non-clickbait categories. This indicates that the model is highly effective when applied to the same type of data it was trained on.
 
-### Model Trained on News Headlines and Tested with News Headlines
+To test the model's generalization ability, it was then evaluated on a separate dataset of YouTube video titles—without retraining. On this dataset, the model achieved a lower accuracy of **63%**. It performed better at identifying clickbait titles (76% recall) than non-clickbait titles (49% recall), suggesting that while clickbait patterns may transfer between domains, non-clickbait cues are more context-specific.
 
-**Confusion Matrix (News):**
-|                  | Predicted: Not Clickbait | Predicted: Clickbait |
-|------------------|--------------------------|-----------------------|
-| Actual: Not Clickbait | 3047                     | 136                   |
-| Actual: Clickbait     | 182                      | 3035                  |
-
-
-
-**Classification Report (News):**
-
-| Class          | Precision | Recall | F1-Score | Support |
-|----------------|-----------|--------|----------|---------|
-| Not Clickbait  | 0.94      | 0.96   | 0.95     | 3183    |
-| Clickbait      | 0.96      | 0.94   | 0.95     | 3217    |
-| **Accuracy**   |           |        | **0.95** | 6400    |
-| **Macro Avg**  | 0.95      | 0.95   | 0.95     | 6400    |
-| **Weighted Avg** | 0.95    | 0.95   | 0.95     | 6400    |
-
----
-
-### News Headline Trained Model Tested on YouTube Titles
-
-**Confusion Matrix (YouTube):**
-|                  | Predicted: Not Clickbait | Predicted: Clickbait |
-|------------------|--------------------------|-----------------------|
-| Actual: Not Clickbait | 49                       | 51                    |
-| Actual: Clickbait     | 24                       | 77                    |
-
-
-
-**Classification Report (YouTube):**
-
-| Class          | Precision | Recall | F1-Score | Support |
-|----------------|-----------|--------|----------|---------|
-| Not Clickbait  | 0.67      | 0.49   | 0.57     | 100     |
-| Clickbait      | 0.60      | 0.76   | 0.67     | 101     |
-| **Accuracy**   |           |        | **0.63** | 201     |
-| **Macro Avg**  | 0.64      | 0.63   | 0.62     | 201     |
-| **Weighted Avg** | 0.64    | 0.63   | 0.62     | 201     |
-
+These results highlight that while the model generalizes moderately well to new platforms, retraining or fine-tuning with domain-specific data would likely improve performance.
 
 ## Decision Tree
 This module focuses specifically on the decision tree component of the larger NLP project. For this file, you may have to edit the path to the data in the notebook, but if it is structured the same way it is in the GitHub repository, it should function. The notebook should do all preprocessing, so it can be run in its entirety.
