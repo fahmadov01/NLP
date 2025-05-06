@@ -33,7 +33,86 @@ what goes here???
   - Wrote the introduction to the progress report, as well as the data section
   - Helped with the final presentation slides
 
+- Colin OConnor
+  - Implemented Support Vector Machine model
+  - Produced the project abstract
+  - Helped with final presentation slides
 ---
+
+# Support Vector Machine
+
+## Project Setup
+This model was created in a Jupyter Lab environment.  
+Download the `SVMclickbait.ipynb` file.  
+Download both datasets: `clickbait_data.csv` and `youtube_dataset.csv`. Both files are included in the GitHub repository but can also be accessed from their links found above.
+
+## Required Libraries
+To run this project, you will need to install the following Python libraries:
+
+- **pandas**: Used for reading CSV files and manipulating data in tabular form. Install with: **pip install pandas**
+
+- **string**: A built-in Python module used here to help remove punctuation during text preprocessing. No installation required.
+
+- **scikit-learn** (sklearn): A machine learning library used for feature extraction with TfidfVectorizer, splitting the dataset with train_test_split, training the model using LinearSVC, and evaluating with classification_report and confusion_matrix. Install with: **pip install scikit-learn**
+
+- **matplotlib**: Used to visualize the confusion matrix. Install with: **pip install matplotlib**
+
+- **seaborn**: A data visualization library built on top of matplotlib that makes plotting heatmaps cleaner and more attractive. Install with: **pip install seaborn**
+
+## How to Run
+
+1. Open the `SVMclickbait.ipynb` notebook in Jupyter Lab.
+2. Make sure `clickbait_data.csv` and `youtube_dataset.csv` are in the same directory as the notebook.
+3. Run each cell in order:
+   - This will preprocess the data,
+   - Train the SVM model on the clickbait dataset,
+   - Evaluate the model on both the test set and the YouTube dataset.
+4. Confusion matrices and classification reports will be printed and displayed as plots.
+
+## Results
+
+### Model Trained on News Headlines
+
+**Confusion Matrix (News):**
+|                  | Predicted: Not Clickbait | Predicted: Clickbait |
+|------------------|--------------------------|-----------------------|
+| Actual: Not Clickbait | 3047                     | 136                   |
+| Actual: Clickbait     | 182                      | 3035                  |
+
+
+
+**Classification Report (News):**
+
+| Class          | Precision | Recall | F1-Score | Support |
+|----------------|-----------|--------|----------|---------|
+| Not Clickbait  | 0.94      | 0.96   | 0.95     | 3183    |
+| Clickbait      | 0.96      | 0.94   | 0.95     | 3217    |
+| **Accuracy**   |           |        | **0.95** | 6400    |
+| **Macro Avg**  | 0.95      | 0.95   | 0.95     | 6400    |
+| **Weighted Avg** | 0.95    | 0.95   | 0.95     | 6400    |
+
+---
+
+### Model Tested on YouTube Titles
+
+**Confusion Matrix (YouTube):**
+|                  | Predicted: Not Clickbait | Predicted: Clickbait |
+|------------------|--------------------------|-----------------------|
+| Actual: Not Clickbait | 49                       | 51                    |
+| Actual: Clickbait     | 24                       | 77                    |
+
+
+
+**Classification Report (YouTube):**
+
+| Class          | Precision | Recall | F1-Score | Support |
+|----------------|-----------|--------|----------|---------|
+| Not Clickbait  | 0.67      | 0.49   | 0.57     | 100     |
+| Clickbait      | 0.60      | 0.76   | 0.67     | 101     |
+| **Accuracy**   |           |        | **0.63** | 201     |
+| **Macro Avg**  | 0.64      | 0.63   | 0.62     | 201     |
+| **Weighted Avg** | 0.64    | 0.63   | 0.62     | 201     |
+
 
 ## Decision Tree
 This module focuses specifically on the decision tree component of the larger NLP project. For this file, you may have to edit the path to the data in the notebook, but if it is structured the same way it is in the GitHub repository, it should function. The notebook should do all preprocessing, so it can be run in its entirety.
