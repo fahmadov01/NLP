@@ -11,7 +11,7 @@ This README provides detailed instructions on how to reproduce the results in a 
 ## Data Sets
 Download wither from this repository, or they can be found here:
 - [Kaggle - Clickbait Dataset](https://www.kaggle.com/datasets/amananandrai/clickbait-dataset)
-- [YouTube Dataset - LINK TBD] *(LINK HERE)*
+- [YouTube Dataset - LINK TBD] (https://github.com/kaustubh0201/Clickbait-Classification/blob/main/youtube_dataset.csv)
 
 ---
 
