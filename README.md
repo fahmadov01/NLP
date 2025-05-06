@@ -9,7 +9,7 @@ This README provides detailed instructions on how to reproduce the results in a 
 ---
 
 ## Data Sets
-Download wither from this repository, or they can be found here:
+Download either from this repository, or they can be found here:
 - [Kaggle - News Headline Dataset](https://www.kaggle.com/datasets/amananandrai/clickbait-dataset)
 - [Github - YouTube Title Dataset](https://github.com/kaustubh0201/Clickbait-Classification/blob/main/youtube_dataset.csv)
 
