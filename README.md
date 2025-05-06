@@ -1,5 +1,5 @@
 # NLP Project - Spring 2025
-**Team Members:** Nate Cowan, Farid Ahmadov, Colin O Connor, Nolan Lee, Conlan Mann
+**Team Member:** Nate Cowan
 
 ## Overview
 This project implements a clickbait headline detection system using multiple different NLP algorithms. The models are trained on a labeled dataset of news headlines, where each entry is labeled as either **clickbait (1)** or **not clickbait (0)**.
@@ -37,6 +37,11 @@ what goes here???
   - Implemented Support Vector Machine model
   - Produced the project abstract
   - Helped with final presentation slides
+
+- Conlan Mann
+  - Implemented Naive Bayes model in collaboration with Nolan Lee
+  - Led final presentation slide design/structure
+  - Assisted in research for 'Related Work' section of progress report, in addition to 'Next Steps'
 ---
 
 # Support Vector Machine
@@ -66,12 +71,12 @@ To run this project, you will need to install the following Python libraries:
 3. Run each cell in order:
    - This will preprocess the data,
    - Train the SVM model on the clickbait dataset,
-   - Evaluate the model on both the News Headline test set and the YouTube dataset.
+   - Evaluate the model on both the test set and the YouTube dataset.
 4. Confusion matrices and classification reports will be printed and displayed as plots.
 
 ## Results
 
-### Model Trained on News Headlines and Tested with News Headlines
+### Model Trained on News Headlines
 
 **Confusion Matrix (News):**
 |                  | Predicted: Not Clickbait | Predicted: Clickbait |
@@ -93,7 +98,7 @@ To run this project, you will need to install the following Python libraries:
 
 ---
 
-### News Headline Trained Model Tested on YouTube Titles
+### Model Tested on YouTube Titles
 
 **Confusion Matrix (YouTube):**
 |                  | Predicted: Not Clickbait | Predicted: Clickbait |
