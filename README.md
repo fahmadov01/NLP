@@ -11,5 +11,11 @@ Download wither from this repository, or they can be found here:
 https://www.kaggle.com/datasets/amananandrai/clickbait-dataset
 INSERT YOUTUBE LINK HERE
 
+## Contributions
+- Nate Cowan
+  - Implemented decision tree classifier
+  - Wrote the introduction to the progress report, as well as the data section
+  - Helped with the final presentation slides
+
 ## Decision Tree
 This module focuses specifically on the decision tree component of the larger NLP project.
