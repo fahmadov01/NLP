@@ -1,5 +1,5 @@
 # NLP Project - Spring 2025
-**Team Member:** Nate Cowan
+**Team Members:** Nate Cowan, Farid Ahmadov, Colin O Connor, Nolan Lee, Conlan Mann
 
 ## Overview
 This project implements a clickbait headline detection system using multiple different NLP algorithms. The models are trained on a labeled dataset of news headlines, where each entry is labeled as either **clickbait (1)** or **not clickbait (0)**.
