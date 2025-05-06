@@ -37,6 +37,12 @@ what goes here???
   - Implemented Support Vector Machine model
   - Produced the project abstract
   - Helped with final presentation slides
+    
+- Conlan Mann
+  - Implemented Naive Bayes Model in collaboration with Nolan Lee
+  - Conducted research for 'Related Works' and helped with 'Next Steps' for the progress report
+  - Assisted with design/organization of final presentation and slides
+
 ---
 
 # Support Vector Machine
