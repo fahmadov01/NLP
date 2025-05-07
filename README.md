@@ -24,7 +24,7 @@ Use Python 3.10??? or later. We recommend using the virtual environment used in 
 ---
 
 ## Contributions
-- Nate Cowan
+- Nate Cowan: naco2515
   - Implemented decision tree classifier
   - Wrote the introduction to the progress report, as well as the data section
   - Helped with the final presentation slides
