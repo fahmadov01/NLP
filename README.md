@@ -96,6 +96,20 @@ This module focuses specifically on the decision tree component of the larger NL
 - matplotlib==3.8.4
 ```pip install pandas==2.2.2 scikit-learn==1.3.0 matplotlib==3.8.4```
 
+### How to Run
+
+1. Open the `ClickbaitDecisionTree.ipynb` notebook in Jupyter Lab.
+2. Make sure `clickbait_data.csv` and `youtube_dataset.csv` are in the same directory as the notebook.
+3. Run each cell in order:
+   - This will preprocess the data,
+   - Train the decision tree model on the clickbait dataset,
+   - Evaluate the model on both the News Headline test set and the YouTube dataset.
+4. Decision Tree visualizations at the bottom of the notebook
+NOTE: Make sure you are looking at the correct results, I trained on both the news healines and the Youtube data, and tested both models on the other data.
+
+### Results
+The decision tree classifier achieved a good accuracy of around 90% accuracy when trained on news headlines and tested on news headlines. It performed significantly worse when tested on Youtube headlines.
+
 ## Naive Bayes
 
 ### Introduction  
