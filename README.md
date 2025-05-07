@@ -43,6 +43,10 @@ what goes here???
   - Conducted research for 'Related Works' and helped with 'Next Steps' for the progress report
   - Assisted with design/organization of final presentation and slides
 
+- Farid Ahmadov
+  - Implemented LSTM model
+  - Helped make the final presentation slides
+  - Worked on the project report, especially on the 'Related Works' section
 ---
 
 # Support Vector Machine
