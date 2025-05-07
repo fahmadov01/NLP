@@ -44,7 +44,7 @@ Use Python 3.10??? or later. We recommend using the virtual environment used in 
   - Helped make the final presentation slides
   - Worked on the project report, especially on the 'Related Works' section
  
-- Nolan
+- Nolan Lee
   - Helped implement the Naive Bayes Model in collaboration with Conlan Mann
   - Conducted research for 'Related Works' for the progress report
   - Helped with the final presentation slides
