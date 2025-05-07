@@ -168,6 +168,26 @@ python3 naivebayes.py
 
 ---
 
+## Long Short Term Memory (LSTM)
+### Why LSTM?
+We wanted a more complex model that looks at more than just the word frequency, as well as not assuming the words are all independent of each other (as is the case in clickbait). They are also good at looking and remembering long term dependencies to find patterns which may come up in clickbait titles.
+### Project Setup
+To run the model, download the `lstm.ipynb file`, as well as the `clickbait_data.csv` and the `youtube_dataset.csv` files. Make sure they are in the same path as the `lstm.ipynb` file, and if not change the path in the code. Then, simply run the cell and wait for the program to finish running.
+### Required Libraries
+- **pandas**: Used to read csv file
+- **numpy**: Used for numerical operations, especially to convert labels into NumPy arrays
+- **re**: Regular expressions to clean up the file
+- **sklearn**: Used to split data for training and validation, as well as to measure performance
+- **tensorflow**: Used to tokenize the text
+- **seaborn**: Used to plot the confusion matrix
+- **matplotlib**: Used with **seaborn** to render the confusion matrix
+### Implementation
+We first clean up the text to remove anything that is not a lowercase letter or number. We then tokenize the words, looking at only the 10000 most common words and ignoring the rest. We use a 80-20 training and testing/validation set. We then build the model, converting the titles (of length 20) into 64 dimensional vectors. The model used was an LSTM model with 64 memory cells. The model then predicts the probability, between 0 and 1, that the title is clickbait or not. The model is training using a batchsize of 32 and 5 epochs. The model is then evaluated, and the accuracy, precision, f1-score, and recall are calculated then printed out, as well as the models confusion matrix.
+### Results
+The news model achieved very high precision at around 97 percent, with around 97-98 percent result in the models f1-score, precision, and recall. This shows that the news model is good at checking weather news headlines from the same dataset are clickbait or not.
+
+We then tested the model on the Youtube data to see how it generalizes to other forms of clickbait. In this case the accuracy was significantly lower, at around 66 percent. The models precision was around 64 percent and the recall was around 73 percent, suggesting that the news model was good at correctly classifying true positives (clickbait as clickbait), but misidentified a lot of non clickbait as clickbait. 
+
 ## TF-IDF vs Word2Vec and other methods
 - Data set size
   - The size of our data sets (~30000) lends itself much better to TF-IDF than something more complex like a transformer model
