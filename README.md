@@ -19,11 +19,7 @@ Download either from this repository, or they can be found here:
 
 ### Environment Setup
 
-Use Python 3.10??? or later. We recommend using a virtual environment:
-
-```
-what goes here???
-```
+Use Python 3.10??? or later. We recommend using the virtual environment used in HW0 and other HWs.
 
 ---
 
@@ -47,6 +43,11 @@ what goes here???
   - Implemented LSTM model
   - Helped make the final presentation slides
   - Worked on the project report, especially on the 'Related Works' section
+ 
+- Nolan
+  - Helped implement the Naive Bayes Model in collaboration with Conlan Mann
+  - Conducted research for 'Related Works' for the progress report
+  - Helped with the final presentation slides
 ---
 
 ## Support Vector Machine
